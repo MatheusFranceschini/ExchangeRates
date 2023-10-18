@@ -20,7 +20,7 @@ enum RatesRouter {
         }
     }
     
-    func asUrlRequest() throws -> URLRequest? {
+    func asUrlRequest() -> URLRequest? {
         guard var url = URL(string: RatesAPI.baseURL) else { return nil }
         
         switch self {
